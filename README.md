@@ -1,5 +1,5 @@
-# Flounderscript-lang
-Flounderscript is an esoteric programming language similar to deadfish.
+# Choices++/lang
+Choices++ is an esoteric programming language similar to deadfish.
 
 
 The language cannot print letters instead it uses numbers.
