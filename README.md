@@ -20,3 +20,6 @@ Output:
 114 "R"
 108 "L"
 100 "D"
+
+
+This README.md is outdatet.
