@@ -1,5 +1,5 @@
 # Choices++ interpreter.
-program = open('Choices++.txt' , 'r')
+program = input()
 accumulator = 0
 
 
