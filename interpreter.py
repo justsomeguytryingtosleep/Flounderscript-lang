@@ -1,38 +1,38 @@
-# Choices++ interpreter.
-program = input()
+program = open('Choices++.txt' , 'r')
 accumulator = 0
+program = program.readlines()
 
 
-
-
-for instruction in program:
-    if instruction == "+":  # 1
+L = [line.rstrip() for line in program]
+for n in L:
+    if n == "+":
         accumulator += 1
-    elif instruction == "-":  # 2
+    elif n == "-":  # 2
         accumulator -= 1
-    elif instruction == "o":  # 3
+    elif n == "o":  # 3
         print(accumulator)
-    elif instruction == "1":  # 4
+    elif n == "1":  # 4
         accumulator = 1
-    elif instruction == "0":  # 5
+    elif n == "0":  # 5
         accumulator = 0
-    elif instruction == "dec":  # 6
+    elif n == "dec":  # 6
         accumulator -= 1
-    elif instruction == "print{o}":  # 7
+    elif n == "print{o}":  # 7
         print(accumulator)
-    elif instruction == "alert{o}":  # 8
+    elif n == "alert{o}":  # 8
         print(accumulator)
-    elif instruction == "System.print.{o}":  # 9
+    elif n == "System.print.{o}":  # 9
         print(accumulator)
-    elif instruction == ",":  # 10
+    elif n == ",":  # 10
         accumulator += 10
-    elif instruction == "print<o>":  # 11
+    elif n == "print<o>":  # 11
         print(accumulator)
-    elif instruction == "add<+>":   # 12
+    elif n == "add<+>":   # 12
         accumulator += 1
-    elif instruction == "add<+>.print[o]":  # 13
+    elif n == "add<+>.print[o]":  # 13
         accumulator += 1
         print(accumulator)
-    elif instruction == "add[+]":   # 14
+    elif n == "add[+]":   # 14
         accumulator += 1
+
 
